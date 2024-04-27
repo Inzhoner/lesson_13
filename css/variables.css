@@ -1,0 +1,19 @@
+:root {
+    --color-dark: #2b2929;
+    --color-grey: #535353;
+    --color-light: #f8f8f8;
+    --color-yellow: #ffbc57;
+    --color-light-bg: #ffffff;
+
+    --font-wight-semibold: 600px;
+    --font-wight-light: 300px;
+    --line-height: 1.33;
+
+    --font-family-base: 'Proxima Nova', sans-serif;
+
+    --container-width: 1070px;
+
+    --container-padding-x: 15px;
+
+    --transition-duration: 0.2s;
+}

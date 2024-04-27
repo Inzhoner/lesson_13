@@ -1,0 +1,18 @@
+body {
+    font-family: var(--font-family-base);
+    font-size: 19px;
+    color: var(--color-grey);
+    background-color: var(--color-light);
+}
+
+[class*='__container'] {
+    max-width: 1320px;
+    margin-inline: auto;
+    padding-inline: 15px;
+}
+
+
+
+/* main {
+    background-color: var(--color-bg-gray);
+} */

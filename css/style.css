@@ -1,0 +1,57 @@
+@import url(fonts.css);
+@import url(reset.css);
+@import url(variables.css);
+@import url(base.css);
+
+/*+ Header */
+
+/* // Header Top */
+.header__top {
+    padding-block: 15px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+}
+.nav {
+}
+.nav__list {
+    display: flex;
+    gap: 30px;
+}
+.nav__item {
+    color: var(--color-grey);
+    font-size: 16px;
+    line-height: 1.875;
+}
+.nav__link {
+}
+.header__support {
+}
+.support {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.support__text {
+}
+.support__list {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.support__item {
+}
+.support__link {
+}
+.support__svg {
+    width: 30px;
+    height: 30px;
+}
+.support__language {
+}
