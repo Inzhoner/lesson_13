@@ -13,6 +13,7 @@
 .header__container {
     display: flex;
     justify-content: space-between;
+    gap: 15px 30px;
     align-items: center;
 }
 
@@ -22,10 +23,10 @@
 }
 .nav__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 .nav__item {
-    color: var(--color-grey);
     font-size: 16px;
     line-height: 1.875;
 }
@@ -35,10 +36,13 @@
 }
 .support {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     align-items: center;
 }
 .support__text {
+    font-size: 16px;
+    line-height: 1.875;
 }
 .support__list {
     display: flex;
