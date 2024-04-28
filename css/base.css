@@ -1,6 +1,6 @@
 body {
     font-family: var(--font-family-base);
-    font-size: 19px;
+    font-size: 16px;
     color: var(--color-grey);
     background-color: var(--color-light);
 }
@@ -11,8 +11,16 @@ body {
     padding-inline: 15px;
 }
 
+/* a {
 
-
-/* main {
-    background-color: var(--color-bg-gray);
 } */
+
+/*+ Button  */
+.btn {
+    background-color: var(--color-yellow);
+    color: var(--color-light-bg);
+    font-size: 19px;
+    font-weight: var(--font-wight-semibold);
+    line-height: 1.26;
+    border-radius: 8px;
+}

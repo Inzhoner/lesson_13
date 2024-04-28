@@ -1,0 +1,151 @@
+
+.catalog-button__btn {
+    color: #fff;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 1.26;
+    padding: 11px 20px;
+    border-radius: 8px;
+    background: #ffbc57;
+    position: relative;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    transition: transform 0.15s ease, box-shadow 0.15s ease-in-out;
+}
+
+.catalog-button__icon {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background-image: url('../img/header/menu-catalog.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+    margin-right: 10px;
+}
+
+.catalog-button__btn:hover {
+    scale: 1.02;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-button__btn:focus .catalog-button__icon {
+    background-image: url('../img/header/menu-catalog-active.svg');
+}
+
+/*- dropdown menu */
+.catalog-button__dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    min-height: 310px; /*для корректного відображення контенту якщо замало */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-block: 8px;
+    border-radius: 8px 0 0 8px;
+}
+
+/*! погана думка - на бордері курсор хибить появу сабменю, а писати pointer-events: none; недоречно ібо костиль */
+/* .menu-dropdown__list {
+    border-right: #ffbc57 5px solid;
+} */
+
+.menu-dropdown__list::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    right: 0;
+    width: 5px;
+    background-color: #ffbc57;
+    z-index: -1;
+    /* pointer-events: none; */
+}
+
+.menu-dropdown__item:hover::after {
+    background-color: #ffbc57;
+}
+
+/* Показуємо моє меню, коли кнопка має фокус */
+.catalog-button__btn:focus + .catalog-button__dropdown,
+.menu-dropdown:hover {
+    display: block;
+}
+
+/* Показуємо моє меню, коли відкритий дропдаун */
+.menu-dropdown:focus-within {
+    display: block;
+}
+
+.menu-dropdown__item {
+    /* background-color: #fff; */
+}
+
+.submenu-dropdown__item {
+    background-color: #fff;
+}
+
+.menu-dropdown__item:hover .menu-dropdown__link {
+    background-image: url(../img/header/main-header-dropdown/arrow-black.svg);
+    background-color: #ffbc57;
+}
+
+.menu-dropdown__link {
+    width: 305px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    padding: 10px 35px 10px 30px;
+    background: url(../img/header/main-header-dropdown/arrow.svg) right 10px
+        center / auto no-repeat;
+}
+
+.menu-dropdown__link span {
+    display: inline-block;
+}
+
+.menu-dropdown__link img {
+    margin-right: 15px;
+}
+
+.menu-dropdown__link > * {
+    vertical-align: middle;
+}
+
+/*- sub menu dropdown */
+.submenu-dropdown__list {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 100;
+    background-color: #fff;
+    padding-block: 8px;
+    border-radius: 0 8px 8px 0;
+    overflow-y: auto;
+    bottom: 0;
+}
+
+.menu-dropdown__item:hover .submenu-dropdown__list,
+.submenu-dropdown__list:hover,
+.submenu-dropdown__list:focus-within {
+    display: block;
+}
+
+.submenu-dropdown__list {
+    padding: 20px 20px 10px 35px;
+}
+
+.submenu-dropdown__link {
+    width: 300px;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 2.1;
+}
+
+.submenu-dropdown__link:hover {
+    text-decoration: underline;
+}
