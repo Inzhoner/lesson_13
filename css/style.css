@@ -71,7 +71,6 @@
 }
 
 /* Main header button */
-
 .btn-header__main {
     display: flex;
     align-items: center;
@@ -100,7 +99,6 @@
 }
 
 /* Search form */
-
 .search-form {
     display: flex;
     align-items: center;
@@ -122,7 +120,7 @@
 
 .search-form__input::placeholder {
     color: var(--color-grey-light);
-  }
+}
 
 .search-form__button {
     display: flex;
@@ -135,4 +133,32 @@
     background-image: url(../img/header/poisk.svg);
     background-position: center;
     background-repeat: no-repeat;
+}
+
+/* Header-Main phone box */
+.phone-header {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.phone-header__telephone-icon {
+}
+
+.box-number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-number__schedule {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.69;
+}
+
+.box-number__telephone {
+}
+
+.phone-header__arrow-icon {
 }
