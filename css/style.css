@@ -228,7 +228,6 @@
     gap: 24px 10px;
     max-width: 1290px;
     margin-inline: auto;
-    margin-bottom: 100px;
 }
 
 .categories__card {
@@ -298,4 +297,65 @@
     width: 150px;
     height: 140%;
     background-image: linear-gradient(180deg, #ff1b1b, #ff8585);
+}
+
+/*+ Popular products */
+.products {
+    margin-bottom: 80px;
+}
+
+.headline {
+    display: flex;
+    align-items: center;
+    gap: 5px 30px;
+    margin-bottom: 40px;
+}
+
+.headline__title {
+    color: var(--color-dark);
+    font-size: 40px;
+    font-weight: var(--font-wight-semibold);
+    line-height: 1.2;
+}
+
+.headline__link-title {
+    color: #ffbc57;
+    font-size: 19px;
+    font-weight: var(--font-wight-semibold);
+    line-height: 1.26;
+}
+
+.products__cards {
+}
+.products__card {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-content {
+}
+.card-content__photo {
+}
+.photo-card {
+}
+.photo-card__link {
+}
+.card-img {
+}
+.card-content__description {
+}
+.description-card {
+}
+.description-card__span-top {
+}
+.description-card__title {
+}
+.description-card__span-bottom {
+}
+.card-content__price {
+}
+.price-info {
+}
+.price-info__text {
+}
+.price-info__icon {
 }

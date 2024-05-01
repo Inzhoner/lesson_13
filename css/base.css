@@ -11,7 +11,7 @@ body {
     padding-inline: 15px;
 }
 
-a:hover {
+a:not(.headline__link-title):hover {
     color: var(--color-yellow);
 }
 
