@@ -11,9 +11,9 @@ body {
     padding-inline: 15px;
 }
 
-/* a {
-
-} */
+a:hover {
+    color: var(--color-yellow);
+}
 
 /*+ Button  */
 .btn {
