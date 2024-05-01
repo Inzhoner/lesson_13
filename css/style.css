@@ -151,13 +151,18 @@
     align-items: center;
 }
 
+/*! ОШИБКА fs  */
 .box-number__schedule {
-    font-size: 13px;
+    font-size: 9px;
     font-weight: 300;
     line-height: 1.69;
 }
 
 .box-number__telephone {
+    color: var(--color-dark);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
 }
 
 .phone-header__arrow-icon {
