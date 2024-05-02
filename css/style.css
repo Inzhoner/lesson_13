@@ -319,17 +319,33 @@
 }
 
 .headline__link-title {
-    color: #ffbc57;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-yellow);
     font-size: 19px;
     font-weight: var(--font-wight-semibold);
     line-height: 1.26;
 }
 
-.products__cards {
+.headline__link-title::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background: url(../img/products/arrow.svg) center / 12px 12px no-repeat;
 }
+
+.products__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1290px;
+}
+
 .products__card {
     display: flex;
     flex-wrap: wrap;
+    max-width: 300px;
 }
 .card-content {
 }
