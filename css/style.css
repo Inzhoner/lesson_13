@@ -326,13 +326,18 @@
     font-size: 19px;
     font-weight: var(--font-wight-semibold);
     line-height: 1.26;
+    transition: transform 0.3s;
 }
 
 .headline__link-title::after {
     content: '';
     width: 24px;
     height: 24px;
-    background: url(../img/products/arrow.svg) center / 12px 12px no-repeat;
+    background: url(../img/products/arrow.svg) center / 24px 24px no-repeat;
+}
+
+.headline__link-title:hover {
+    transform: translate(2px, -5px);
 }
 
 .products__cards {
@@ -345,7 +350,9 @@
 .products__card {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
     max-width: 300px;
+    padding: 20px;
 }
 .card-content {
 }
@@ -370,6 +377,7 @@
 .card-content__price {
 }
 .price-info {
+    display: flex;
 }
 .price-info__text {
 }
