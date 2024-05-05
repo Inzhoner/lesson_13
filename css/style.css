@@ -247,7 +247,7 @@
 
 .categories__card:hover {
     box-shadow: -5px 6px 17px 0px rgba(0, 0, 0, 0.15);
-    scale: 1.02;
+    transform: scale(0.2);
 }
 
 .categories__content-card {
